@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maginot - Your Feature-Rich Platform</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            border: solid black 1px;
+            border-radius: 25px;
+            padding: 20px;
+        }
+
+        .form-container {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .image-container {
+            flex: 1;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="heading_navbar">
+        <div class="header-container">
+            <h1>Maginot CyberSec</h1>
+            <ul class="nav-links">
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li><a href="{{url_for('signup')}}">Sign Up</a></li>
+                <li><a href="{{url_for('login')}}">Login</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Roadmap</a></li>
+            </ul>
+        </div>
+        <h2>One-stop AI powered solution for your business cybersec needs</h2>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <center><h1>Sign Up</h1></center>
+            <form action="{{ url_for('signup') }}" method="post">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="submit" value="Sign Up" class="button">
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="/static/img/signup.png" alt="Placeholder Image">
+        </div>
+    </div>
+</body>
+</html>

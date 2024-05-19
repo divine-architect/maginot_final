@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maginot - Your Feature-Rich Platform</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="heading_navbar">
+        <div class="header-container">
+            <h1>Maginot CyberSec</h1>
+            <ul class="nav-links">
+                <li><a href="{{url_for('home')}}">Home</a></li>
+                <li><a href="{{url_for('signup')}}">Sign Up</a></li>
+                <li><a href="{{url_for('login')}}">Login</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Roadmap</a></li>
+            </ul>
+        </div>
+        <h2>One-stop AI powered solution for your business cybersec needs</h2>
+    </div>
+    <div class="options" style="border:solid black 1px;border-radius: 25px;">
+        <div class="button-container">
+            <a href="{{url_for('social_media')}}"><button class="custom-button">Social Media Monitoring</button></a>
+            <div class="vertical-line"></div>
+            <a href="{{url_for('infrastructure')}}"><button class="custom-button">Infrastructure Monitoring</button></a>
+        </div>
+    </div>
+</body>
+</html>

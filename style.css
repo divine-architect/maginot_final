@@ -1,0 +1,184 @@
+body {
+  background-color: white; /* Dark blue background */
+  color: black; /* White text */
+  font-family: 'Roboto Mono', monospace; /* Monospace font */
+  margin: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.heading_navbar {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 0px; /* Adjust the value to increase or decrease the gap */
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+/* Reset default anchor styles  */
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* Set hover effect for all links (initial state) */
+a:hover {
+  color: rgb(252, 124, 252);
+}
+
+/* Style individual links on hover */
+.nav-links li:nth-child(odd) a:hover { /* Applies to odd children (Sign Up) */
+  color: cyan;
+}
+
+.nav-links li:nth-child(even) a:hover { /* Applies to even children (Login) */
+  color: rgb(252, 124, 252);
+}
+
+/* Default styles for links (optional) */
+.nav-links li a {
+  color: black; /* Set default color for all links */
+}
+
+.content_body {
+  border: solid black 1px;
+  border-radius: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.left_para {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+}
+
+.right_para {
+  display: flex;
+  font-size: 30px;
+  align-items: center;
+}
+
+/* Style the three-column container */
+.three-columns {
+  display: flex; /* Make columns display horizontally */
+  justify-content: space-between; /* Equally space columns */
+  margin-top: 30px; /* Add some margin from previous content */
+  /* Add a top border */
+  padding-top: 20px; /* Add some padding at the top */
+}
+
+/* Style each column */
+.column {
+  flex: 1; /* Make each column take up equal space */
+  text-align: center; /* Center content within columns */
+  font-size: 25px;
+  padding: 10px; /* Add some padding within columns */
+}
+
+/* Style the vertical lines (between columns) */
+.three-columns:after {
+  content: ""; /* Add an empty element for the lines */
+  display: block;
+  height: 100%; /* Make the lines full height of the container */
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 1px; /* Set the width of the lines */
+  background-color: black; /* Set the color of the lines */
+}
+
+/* Style the last column's right border (optional) */
+.three-columns .column:last-child {
+  border-right: none; /* Remove the right border of the last column */
+}
+
+/* Style the headings (h3) */
+.three-columns h3 {
+  margin-bottom: 10px; /* Add some space below headings */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007BFF;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Custom button styles */
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-button {
+  padding: 20px 40px; /* Larger padding */
+  font-size: 24px; /* Larger font size */
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 10px; /* Rounded corners */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin: 20px; /* Space around buttons */
+}
+
+.custom-button:hover {
+  background-color: #333; /* Darker grey on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.vertical-line {
+  width: 1px;
+  height: 100px; /* Adjust height as needed */
+  background-color: black;
+  margin: 0 20px; /* Space around the line */
+}
